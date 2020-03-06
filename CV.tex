@@ -1,0 +1,148 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{marvosym}
+\usepackage{fontspec}
+\usepackage{xunicode,xltxtra,url,parskip}
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+
+%CV Sections inspired by: 
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\hyphenation{im-pre-se}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+\pagestyle{empty} % non-numbered pages
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{
+    \centering
+    \Huge Pouya Orandi
+    \bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Information
+\section{Contact Information}
+\begin{tabular}{r p{5.75cm} r l}
+    \textsc{First Name:} & Pouya & \textsc{email:} & \href{mailto:Pouya.Orandi@gmail.com}{Pouya.Orandi@gmail.com}\\ 
+    \textsc{Last Name:} & Baghban Orandi & \textsc{Phone:} & +98 914 301 5518
+\end{tabular}
+\\
+
+%Section: Education
+\section{Education}
+\begin{tabular}{r|l}	
+    \textsc{2012 - 2016} & \textbf{B.Sc. in Civil Engineering}\\
+    & University of Tabriz, Iran\\
+	& GPA (Last 60 Credits): \textbf{3.33/4.0} \\
+    & GPA (Total): \textbf{3.13/4.0} \\
+ 	& \footnotesize{Admitted by placing in the top 1 percent in the Konkoor exam}
+ 	\multicolumn{2}{c}{}\\
+ \textsc{2008 - 2011} & \textbf{High School and Pre-University Diploma in Physics and Mathematics}\\
+    & Shahid Madani High School (NODET), Iran\\
+    & GPA: \textbf{17.8/20}\\
+    & \footnotesize{Admitted by placing in the top 100 in the Geniuses exam}
+\end{tabular}
+\\
+
+%Section: Research Interests
+\section{Research Interests}
+\begin{tabular}{p{14cm}}
+    \textsc{Intelligent Transportation Systems, Connected Automated Vehicles, Artificial Intelligence and Machine Learning}
+\end{tabular}
+\\
+
+%Section: Work experience
+\section{Work Experience}
+\begin{tabular}{l|p{11.25cm}}
+    \textsc{2016 - Present} & \textbf{Technical Department Engineer} at Sekooh Construction Co.\\
+    & \footnotesize{\textit{Duties:}}\\
+    & \footnotesize{- Preparing tender documents}\\
+    & \footnotesize{- Providing technical and administrative information to all parties involved in the project}\\
+    & \footnotesize{- Estimating costs and labour}\\
+    & \footnotesize{- Planning, scheduling and controlling projects}\\
+    & \footnotesize{- Performing technical coordination for purchasing equipment}\\
+    & \footnotesize{- Performing construction inspections}\\
+    & \footnotesize{- Analyzing reports, preparing spreadsheets and composing mail}
+    \multicolumn{2}{c}{}\\
+    \textsc{2013 - Present} & \textbf{Property Manager} of a dozen commercial rental properties\\
+    & \footnotesize{\textit{Duties:}}\\
+    & \footnotesize{- Maintaining property rentals by advertising and filling vacancies, negotiating and enforcing leases, and maintaining and securing premises}\\
+    & \footnotesize{- Establishing rental rate by surveying local rental rates and calculating overhead costs,  depreciation, taxes, and profit goals}\\
+    & \footnotesize{- Attracting tenants by explaining advantages of location and services, and showing units}\\
+    & \footnotesize{- Investigating and resolving tenant complaints and enforcing rules of occupancy}\\
+    & \footnotesize{- Inspecting vacant units, planning renovations and supervising repairs}\\
+    & \footnotesize{- Accomplishing financial objectives by collecting rents, paying bills, forecasting requirements, preparing an annual budget, scheduling expenditures, analyzing variances, and initiating corrective action}\\
+    & \footnotesize{- Preparing reports by collecting, analyzing, and summarizing data and trends}
+    \multicolumn{2}{c}{}\\
+    \textsc{2014 - 2015} & \textbf{On-site Internship} at several residential projects\\
+    & \footnotesize{Learned and implemented various aspects such as quantity estimation, labour management and safety precautions}
+\end{tabular}
+\\
+
+%Section: Language Skills
+\section{Language Skills}
+\begin{tabular}{r|p{6cm} r|p{6cm}}
+    \textbf{English} & \textsc{Fluent (Expert user)} & \textbf{Turkish} & \textsc{Fluent}\\
+    \\
+    & \textbf{TOEFL: 116/120} & \textbf{Persian} & \textsc{Native}\\
+    & \footnotesize{- Reading: \textbf{30}/30}\\
+    & \footnotesize{- Listening: \textbf{30}/30} & \textbf{Azeri} & \textsc{Native}\\
+    & \footnotesize{- Speaking: \textbf{29}/30}\\
+    & \footnotesize{- Writing: \textbf{27}/30}\\
+    \\
+	& \textbf{GRE: 320/340}\\
+    & \footnotesize{- Quantitative Reasoning: \textbf{164}/170}\\
+ 	& \footnotesize{- Verbal Reasoning: \textbf{156}/170}\\
+    & \footnotesize{- Analytical Writing:\textbf{ 4.0}/6.0}
+\end{tabular}
+\\
+
+%Section: Skills
+\section{Skills}
+\begin{tabular}{r p{9.5cm}}
+    \textsc{Engineering Software:} & Familiar with MATLAB, ETABS and AutoCAD\\
+    \\
+    \textsc{Programming Languages:} & Familiar with Python and FORTRAN\\
+    \\
+    \textsc{General Computer Skills:} & Expert at Windows, Linux, Office, and using the Internet for research and learning purposes, Proficient with \LaTeX\\
+    \\
+    \testsc{Scientific Research:} & Familiar (Currently improving)
+\end{tabular}
+\\
+
+%Section: General Business Skills and Soft Skills
+\section{Transferable Skills}
+\begin{tabular}{r p{8.5cm}}
+    \textsc{\textbf{Learning new skills and concepts:}} & Expert (I consider myself a fast-learner)\\
+    \\
+    \textsc{\textbf{Emotional State Management:}} & Expert \\
+    \\
+    \textsc{\textbf{Interpersonal Communication:}} & Proficient (Currently improving)\\
+    \\
+    \textsc{\textbf{Persuasion:}} & Familiar (Currently improving)\\
+    \\
+
+    \textsc{\textbf{More:}} & Time and Priority Management, Adaptability, Problem Solving, Assertiveness, Flexibility, Independent Working, Critical Thinking
+\end{tabular}
+\end{document}
