@@ -1,1 +1,1 @@
-<p align="center"> # My CV </p>
+# My CV
